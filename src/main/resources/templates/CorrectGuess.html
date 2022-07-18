@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correct Answer Page</title>
+    <link rel="stylesheet" href="../static/style.css" th:href="style.css">
+
+</head>
+<body>
+<h1 id="warn">Congratulations!!! You did great.</h1>
+    <div class="form">
+        <p>The total number of attempts: <span th:text="${session.newGame.getCounter()}"></span></p>
+        <p>The secret number was : <span th:text="${session.newGame.getAnswer()}"></span></p>
+    </div>
+    <br><br>
+    <div class="links">
+        <a href="HomePage.html" th:href="@{newGame}">New Game</a>
+    </div>
+    <footer>
+        Sheridan College &nbsp; 📖 &nbsp; Anish Siwakoti.
+    </footer>
+</body>
+</html>

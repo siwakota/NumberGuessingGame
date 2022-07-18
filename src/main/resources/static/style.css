@@ -1,0 +1,56 @@
+h1,h2
+{
+    color: blue;
+    text-align: center;
+}
+
+#warn
+{
+    color: red;
+}
+
+#msg
+{
+    color: red;
+}
+
+a
+{
+    color: blue;
+}
+
+a:hover
+{
+    color: red;
+}
+
+.form
+{
+    position:relative;
+    text-align: center;
+    background-color: rgba(163,255,252,0.14);
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+}
+
+.links
+{
+    text-align: left;
+    background-color: rgba(137,37,255,0.23);
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+footer
+{
+    position: absolute;
+    background-color: rgba(10,134,255,0.21);
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 3px;
+}

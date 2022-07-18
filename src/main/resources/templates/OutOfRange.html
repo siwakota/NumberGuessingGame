@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/style.css" th:href="style.css">
+</head>
+<body>
+<h1 id="warn">Inputted number is out of range.</h1>
+<h2>Current Attempt: <span th:text="${session.newGame.counter}"></span></h2>
+<div class="form">
+    <form th:action="@{processInput}" method="post">
+        <p>Enter any number from 1 to 10: </p>
+        <input type="text" th:name="userInput"/><br><br>
+        <input type="submit" value="CHECK"/>
+    </form>
+</div>
+<br><br>
+<div class="links">
+    <a href="SeeAnswer.html" th:href="@{seeAnswer}">See Answer</a>&nbsp;&nbsp;
+    <a href="HomePage.html" th:href="@{newGame}">New Game</a>
+</div>
+<footer>
+    Sheridan College &nbsp; 📖 &nbsp; Anish Siwakoti.
+</footer>
+</body>
+</html>
