@@ -47,9 +47,9 @@ a:hover
 footer
 {
     position: absolute;
-    background-color: rgba(10,134,255,0.21);
+    background-color: rgba(10, 134, 255, 0.21);
     bottom: 0;
-    width: 100%;
+    width: 95%;
     color: black;
     text-align: center;
     padding: 3px;
